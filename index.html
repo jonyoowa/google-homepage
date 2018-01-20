@@ -1,77 +1,60 @@
 <!DOCTYPE html> 
 <html>
+<link rel="stylesheet" type="text/css" href="./style.css">
   <head>
   </head>
   <body>
   	<div>
   		<header>
-  			<div id="h_left">
-  				<div id="about_link">
-  					<p>About</p>
+  			<ul id="h_left">
+  				<div class="li_text">
+  					<li id="about_link"><a href="">About</a></li>
+  					<li id="store_link"><a href="">Store</a></li>
   				</div>
-  				<div id="store_link">
-  					<p>Store</p>
-  				</div>
-  			</div>
-			<div id="h_right">
-				<div id="gmail_link">
-					<p>Gmail</p>
+  			</ul>
+			<ul id="h_right">
+				<div class="li_text">
+					<li id="gmail_link"><a href="">Gmail</a></li>
+					<li id="images_link"><a href="">Images</a></li>
 				</div>
-				<div id="images_link">
-					<p>Images</p>
-				</div>
-				<div id="apps_button">
-					<img src="./google_homepage_images.png">
-				</div>
-				<div id="notifications_button">
-					<img src="./google_homepage_images.png">
-				</div>
-				<div id="account_image_button">
-					<img src="./archlinux_seahawks_square.png">
-				</div>
-			</div>
+				<div class="h_buttons">
+					<li id="apps_button"><a href=""><img id="nine_squares" src="./apps_grey.png" width="17.5" height="17.5"><li>
+					<li id="notifications_button"><a href=""><img id ="n_bell" src="./notification_bell_grey.png" width="20" height="20"></li>
+					<li id="image_button"><a href=""><img id="user_img" src="./archlinux_seahawks_square.png" width="32" height="32"></li>
+				</div>	
+			</ul>
   		</header>
   	</div>
   	<div id="main_div">
-  		<div>
+  		<div id="google_logo">
   			<img src="./googlelogo_color_272x92dp.png">
   		</div>
-  		<div id="search_bar">
-			<input type="text">
+
+		<div id="s_bar">
+			<input id="search_bar" type="text">
 		</div>
+
 		<div id="search_buttons">
-			<div id="gs_button">
-				<button id="gs">
-					<p>Google Search</p>
-				</button>				
-			</div>
-			<div id="ifl_button">
-				<button id="ifl">
-					<p>I'm Feeling Lucky</p>
-				</button>
-			</div>	
+			<button id="gs_button">
+				<a>Google Search</a>
+			</button>				
+			<button id="ifl_button">
+				<a>I'm Feeling Lucky</a>
+			</button>
 		</div>	
   	</div>
   	<div>
   		<footer>
-  			<div id="f_left">
-  				<div id="advertising_link">
-  					<p>Advertising</p>
-  				</div>
-  				<div id="business_link">
-  					<p>Business</p>
-  				</div>
-  			</div>
-  			<div id="f_right">
-  				<div id="privacy_link">
-  					<p>Privacy</p>
-  				</div>
-  				<div id="terms_link">
-  					<p>Terms</p>
-  				</div>
-  				<div id="settings_link">
-  					<p>Settings</p>
-  				</div>
+  			<div class="li_text">
+	  			<ul id="f_left">
+	  				<li id="advertising_link"><a href="">Advertising</a></li>
+	  				<li id="business_link"><a href="">Business</a></li>
+	  			</ul>
+	  			<ul id="f_right">
+	  				<li id="privacy_link"><a href="">Privacy</a></li>
+	  				<li id="terms_link"><a href="">Terms</a></li>
+	  				<li id="settings_link"><a href="">Settings</a></li>
+	  			</ul>
   			</div>
   		</footer>
   	</div>
