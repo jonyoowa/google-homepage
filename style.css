@@ -36,7 +36,7 @@ li {
 	vertical-align: middle;
 	position: relative;
 	line-height: 10px;
-	
+	left: 15px;
 }
 
 
@@ -50,7 +50,7 @@ a:hover {
 
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0px;
   padding: 0;
   overflow: hidden;
 }
@@ -66,12 +66,18 @@ header ul {
 
 #h_right {
 	float: right;
-	margin-right: 50px;
+	margin-right: 25px;
 }
 
 #apps_button, #notifications_button, #image_button {
 	display: inline-block;
 	position: relative;
+	left: 10px;
+}
+
+#image_button {
+	top: -5px;
+	left: -5px;
 }
 
 #user_img {
@@ -94,11 +100,11 @@ header ul {
     right: 0;
 }
 
-#s_bar {
+#middle {
 	position: absolute;
 	margin-top: 100px;
 
-    top:0;
+    top: 5px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -107,18 +113,35 @@ header ul {
 #search_bar {
 	height: 40px;
 	width: 560px;
+
+	border: 1px solid #F2F2F2;
+    box-shadow: 0.5px 0.5px 1px 1px #ccc;  
+}
+
+#search_bar:link, #search_bar:visited, #search_bar:hover {
+	box-shadow: 1px 1px 1px 1px #ccc;  
 }
 
 #search_buttons {
 	position: absolute;
 	margin: auto;
+	text-align: center;
 
-    top: 150px;
+    top: 175px;
     bottom: 0;
     left: 0;
     right: 0;
-	
-    text-align: center;
+}
+
+.s_buttons {
+	background-color: #F4F4F4;
+	border: 1px #D3D3D3;
+    color: #696969;
+}
+
+.s_buttons:link, .s_buttons:visited, .s_buttons:hover {
+	border: 1px solid #D2D2D2;
+	color: #000;
 }
 
 #gs_button{
@@ -137,20 +160,29 @@ header ul {
 
 footer {
 	background-color: #F2F2F2;
+	
+	border-top: 1px solid #E4E4E4;
+
 	position: absolute;
 	display: inline-block;
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	min-height: 35px;
 	padding-bottom: 10px;
 }
 
+
 #f_left {
 	float: left;
+	position: relative;
+	left: 20px;
 }
 
 #f_right {
 	float: right;
+	position: relative;
+	right: 20px;
 }
 
 
