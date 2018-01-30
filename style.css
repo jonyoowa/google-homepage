@@ -1,32 +1,39 @@
 * {
 	padding: 0;
 	margin: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 
 html * {
 	font-family: Arial !important;
 }
 
-header {
-	position: relative;
-	top: 25px;
-}
-
 a {
-	color: #000;
 	text-decoration: none;
-
-    text-align: center;
-
 	margin-left: 5px;
 	margin-right: 5px;
+	text-decoration: none; 
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 li {
 	display: inline;
 }
 
+.a_top {
+	color: #000;
+}
+
+.a_bottom {
+	color: #666;
+}
+
 .li_text {
+	display: inline;
 	font-size: 13px;
 	opacity: 0.75;
 	text-align: center;
@@ -39,24 +46,10 @@ li {
 	left: 15px;
 }
 
-
-a:visited, a:focus, a:active { 
-	text-decoration: none; 
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-  overflow: hidden;
-}
-
-header ul {
-	display: inline-flex;
+#main_header {
+	position: relative;
+	top: 20px;	
+	color: #000;
 }
 
 #h_left {
@@ -72,63 +65,49 @@ header ul {
 #apps_button, #notifications_button, #image_button {
 	display: inline-block;
 	position: relative;
-	left: 10px;
-}
-
-#image_button {
-	top: -5px;
-	left: -5px;
+	left: 0;
 }
 
 #user_img {
-	border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-}
-
-#nine_squares, #n_bell, #user_img {
-	vertical-align: top;
+	border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
 }
 
 #main_div {
-    position: absolute;
-    margin-top: 200px;
-
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: relative;
+    top: 160px;
+	text-align: center;
 }
 
-#middle {
-	position: absolute;
-	margin-top: 100px;
+#google_logo {
+	position: relative;
+	top: 40px;
+	left: 800px;
+	width: 300px;
+}
 
-    top: 5px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+#search_div {
+	position: relative;
+	top: 40px;
 }
 
 #search_bar {
+	position: relative;
 	height: 40px;
 	width: 560px;
-
 	border: 1px solid #F2F2F2;
-    box-shadow: 0.5px 0.5px 1px 1px #ccc;  
-}
-
-#search_bar:link, #search_bar:visited, #search_bar:hover {
-	box-shadow: 1px 1px 1px 1px #ccc;  
+    box-shadow: 1px 1px 1px 1px #ccc;  
+    font: 16px Arial, sans-serif;
+    color: black;
+    margin-top: 20px;
+    padding-left: 14px;
 }
 
 #search_buttons {
-	position: absolute;
+	position: relative;
 	margin: auto;
-	text-align: center;
-
-    top: 175px;
-    bottom: 0;
+    top: 70px;
     left: 0;
     right: 0;
 }
@@ -147,7 +126,6 @@ header ul {
 #gs_button{
 	height: 36px;
     width: 126px;
-
 	left: 800px;
 }
 
@@ -157,32 +135,29 @@ header ul {
 	right: 800px;
 }
 
-
 footer {
-	background-color: #F2F2F2;
-	
-	border-top: 1px solid #E4E4E4;
-
 	position: absolute;
 	display: inline-block;
 	bottom: 0;
 	left: 0;
+	background-color: #F2F2F2;
+	border-top: 1px solid #E4E4E4;
 	width: 100%;
 	min-height: 35px;
 	padding-bottom: 10px;
 }
 
+#f_left, #f_right {
+	position: relative;
+	top: 16px;
+}
 
 #f_left {
 	float: left;
-	position: relative;
-	left: 20px;
+	left: 25px;
 }
 
 #f_right {
 	float: right;
-	position: relative;
-	right: 20px;
+	right: 25px;
 }
-
-
